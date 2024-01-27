@@ -1,63 +1,75 @@
 export default function GlobalFooter() {
     return (
-        <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
-            <div class="mx-auto max-w-screen-xl text-center">
-                <a
-                    href="/"
-                    class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
-                >
-                    NeoSPECTRUM
-                </a>
-                <p class="my-6 text-gray-500 dark:text-gray-400">
-                    Open-source library of over 400+ web components and
-                    interactive elements built for better web.
-                </p>
-                <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6 ">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">
-                            Premium
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6 ">
-                            Campaigns
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">
-                            Affiliate Program
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">
-                            FAQs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="copyright" id="copyright">
-                    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-                        ©
-                        <a href="#" class="hover:underline">
+        <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <a
+                        href="/"
+                        class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+                    >
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                            NeoSPECTRUM
+                        </span>
+                    </a>
+                    <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">
+                                Privilege
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">
+                                Reward
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">
+                                My Coupons
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">
+                                Gift Voucher
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">
+                                Member Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">
+                                My Account
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                        © 2023{" "}
+                        <a href="/" class="hover:underline">
                             NeoSPECTRUM™
                         </a>
                         . All Rights Reserved.
                     </span>
+                    <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">
+                                Terms and Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>

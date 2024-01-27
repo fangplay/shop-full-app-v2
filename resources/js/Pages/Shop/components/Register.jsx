@@ -131,28 +131,7 @@ export default function Register() {
 
                         <div className="mt-4">
                             <InputLabel value="Gender" />
-                            {/* <TextInput
-                                id="radio-input"
-                                type="radio"
-                                name="gender"
-                                value="male"
-                            />
-                            <InputLabel value="Male" />
-                            <TextInput
-                                id="radio-input"
-                                type="radio"
-                                name="gender"
-                                value="female"
-                            />
-                            <InputLabel value="Female" />
-                            <TextInput
-                                id="radio-input"
-                                type="radio"
-                                name="gender"
-                                value="not specified"
-                                active
-                            />
-                            <InputLabel value="Not Specfied" /> */}
+
                             <ul class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-500 rounded-lg sm:flex dark:bg-gray-600 dark:border-gray-600 dark:text-white">
                                 <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                                     <div class="flex items-center ps-3">
