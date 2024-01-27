@@ -20,6 +20,10 @@ return new class extends Migration
             $table->string('gender');
             $table->date('BirthDate')->nullable();
             $table->string('type');
+            $table->int('coupon_id');
+            $table->string('member_card_id');
+            $table->int('voucher_id');
+            $table->int('reward_id');
             $table->rememberToken();
         });
     }

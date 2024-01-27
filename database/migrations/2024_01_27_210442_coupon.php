@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //product type structure data table
-        Schema::create('product-type',function (Blueprint $table){
+        //
+        Schema::create('coupons',function (Blueprint $table){
             $table->id();
-            $table->string('type_name');
-            $table->text('descreiption');
+            $table->string('name');
+            $table->text('description');
+            $table->date('avaiable');
+            $table->date('expire');
         });
     }
 
@@ -24,7 +26,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //dropping table product-type
-        Schema::dropIfExists('product-type');
+        ///dropping table coupons
+        Schema::dropIfExists('coupons');
     }
 };

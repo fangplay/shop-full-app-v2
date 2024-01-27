@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //status structure data table
-        Schema::create('status',function (Blueprint $table){
+        //
+        Schema::create('reward',function (Blueprint $table){
             $table->id();
-            $table->string('status_name');
-            $table->boolean('actived')->default(true);
+            $table->string('name');
+            $table->text('description');
+            $table->date('date_archieved');
         });
     }
 
@@ -24,7 +25,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //dropping table status
-        Schema::dropIfExits('status');
+        //
+        Schema::dropIfExists('reward');
     }
 };

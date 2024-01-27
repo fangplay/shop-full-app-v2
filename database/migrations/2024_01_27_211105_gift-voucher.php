@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //product type structure data table
-        Schema::create('product-type',function (Blueprint $table){
+        //voucher type structure data table
+        Schema::create('voucher',function (Blueprint $table){
             $table->id();
-            $table->string('type_name');
-            $table->text('descreiption');
+            $table->string('name');
+            $table->text('description');
+            $table->date('expire');
         });
     }
 
@@ -24,7 +25,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //dropping table product-type
-        Schema::dropIfExists('product-type');
+        //
+        Schema::dropIfExists('voucher');
     }
 };
