@@ -189,12 +189,72 @@ export default function Register() {
                         </div>
 
                         <div className="mt-4">
-                            <InputLabel
-                                value="Birth Date"
-                            />
+                            <InputLabel value="Birth Date" />
 
                             <div class="relative max-w-sm">
-                                <input datepicker datepicker-autohide type="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="birthdate" />
+                                <input
+                                    datepicker
+                                    datepicker-autohide
+                                    type="date"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    name="birthdate"
+                                />
+                            </div>
+                        </div>
+                        <div className="mt-4">
+                            <div class="flex items-center">
+                                <input
+                                    id="link-checkbox"
+                                    type="checkbox"
+                                    required
+                                    value=""
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                                />
+                                <label
+                                    for="link-checkbox"
+                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                                >
+                                    I have read and accepted the{" "}
+                                    <a
+                                        href="#"
+                                        class="text-blue-600 dark:text-blue-500 hover:underline"
+                                    >
+                                        terms and conditions
+                                    </a>{" "}and{" "}<a
+                                        href="#"
+                                        class="text-blue-600 dark:text-blue-500 hover:underline"
+                                    >
+                                        privacy policy
+                                    </a>
+                                    of NeoSPECTRUM.
+                                </label>
+                            </div>
+
+                            <div class="flex items-center">
+                                <input
+                                    id="link-checkbox"
+                                    type="checkbox"
+                                    required
+                                    value=""
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                                />
+                                <label
+                                    for="link-checkbox"
+                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                                >
+                                    I agree to receive the information including other marketing activities from NeoSPECTRUM and{" "}
+                                    <a
+                                        href="#"
+                                        class="text-blue-600 dark:text-blue-500 hover:underline"
+                                    >
+                                         affiliated companies.
+                                    </a>{" "}We will keep your data confidential. Learn more about{" "}<a
+                                        href="#"
+                                        class="text-blue-600 dark:text-blue-500 hover:underline"
+                                    >
+                                        privacy policy
+                                    </a>{" "}from company’s website.
+                                </label>
                             </div>
                         </div>
 
