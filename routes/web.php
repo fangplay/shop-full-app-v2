@@ -35,8 +35,21 @@ use Illuminate\Support\Facades\Route;
 //     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 // });
 //bypass shopcontroller
+//get session
 Route::get('/', [ShopController::class,'index']);
 Route::get('/login', [ShopController::class,'login']);
 Route::get('/register', [ShopController::class,'register']);
+Route::get('/user/profile',[ShopController::class,'userprofile']);
+Route::get('/user/order-list',[ShopController::class,'orderlist']);
+//post session
+Route::post('/order-insert',[ShopController::class,'ordercreate']);
+//delete session
+
+//update session
+
+//login session
+
+//logout session
+Route::get('/logout',[ShopController::class,'userlogout']);
 
 require __DIR__.'/auth.php';

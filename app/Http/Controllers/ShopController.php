@@ -49,7 +49,7 @@ class shopController extends Controller
 
     public function userprofile(){
         return Inertia::render('Shop/User/Profile',[
-
+            
         ]);
     }
 
@@ -146,13 +146,14 @@ class shopController extends Controller
         ]);
 
         if($validator->fails()) {
-            return response()->json(['status' => false, 'message' => 'fix errors', 'errors' => $validator->errors()], 500)->route('user.login');
+            return response()->redirect('/login');
         }
         $credentials = $request->only('email', 'password');
         if(auth()->attempt($credentials, $request->filled('remember'))) {
-            return response()->json(['status' => true, 'user' => auth()->user()])->route('user.index');
+            $request->session()->regenerate();
+            return response()->redirect('/user/profile');
         }
-        return response(route('login'));
+        return redirect('/login');
     }
 
     //user logout api route
