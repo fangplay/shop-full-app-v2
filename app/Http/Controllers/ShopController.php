@@ -153,7 +153,7 @@ class shopController extends Controller
             $request->session()->regenerate();
             return response()->redirect('/user/profile');
         }
-        return redirect('/login');
+        return $this->redirect('/');
     }
 
     //user logout api route
